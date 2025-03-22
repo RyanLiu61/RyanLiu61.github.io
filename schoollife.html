@@ -1,0 +1,93 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>School Life</title>
+	<link href="css/mycss.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+	<header>
+	<img class="bannerimg" src="images/schoolimg.jpg" alt="mainlogo">
+	 <div class="container" id="navbar">
+	
+	  <div class="topmenu">
+		<div class="left">
+		 <img src="images/mainlogo.jpg" alt="logo">
+		</div>
+		<div class="middle">
+		 <ul class="menu-list">
+			 <li><b><a href="about.html">About Me</a></b></li>
+			 <li><b><a href="schoollife.html">School Life</a></b></li>
+			 <li><b><a href="daylife.html">Hockey Life</a></b></li>
+			 <li><b><a href="createlife.html">Create Life</a></b></li>
+			 <li><b><a class="active" href="index.html">Contact Me</a></b></li>
+		 </ul>
+		</div>
+	  </div>
+	 </div>
+	</header>	
+	
+<div class="center-block">
+	<h1>Educational Background</h1>
+	
+<div class="dfzp">
+		<div class="zp">
+		 <img src="images/rdfx.PNG" alt="hockey01" class="hockey">
+		<div class="hua">
+		 <h3>The Elementary School Affiliated to Renmin University of China</h3>
+</div>
+</div>
+	
+	<div class="zp">
+	<img src="images/101m.jpg" alt="hockey02" class="hockey">
+	<div class="hua">
+		 <h3>Beijing No.101 Middle School</h3>
+</div>
+</div>
+	
+	<div class="zp">
+	<img src="images/101h.jpg" alt="hockey03" class="hockey">
+	<div class="hua">
+	<h3>Beijing No.101 High School</h3>
+</div>
+</div>
+	
+	<div class="zp">
+	<img src="images/olsm.PNG" alt="hockey04" class="hockey">
+	<div class="hua">
+	<h3>St.Mary's Preparatory High School</h3>
+</div>
+</div>
+	
+	<div class="zp">
+	<img src="images/uwm.PNG" alt="hockey05" class="hockey">
+	<div class="hua">
+	<h3>University of Wisconsin-Madison</h3>
+</div>
+</div>
+	<div class="zp">
+	<img src="images/tbc.png" alt="hockey05" class="hockey">
+	<div class="hua">
+	<h3>As of 2024</h3>
+</div>
+</div>
+</div>
+</div>
+	
+	
+	
+	
+</body>
+<script>
+	window.addEventListener('scroll', function () {
+		var navbar = document.getElementById('navbar');
+		if (window.scrollY > 50){
+			navbar.classList.add('activeBg');
+			navbar.classList.remove('transBg');
+	} else {
+			navbar.classList.add('transBg');
+			navbar.classList.remove('activeBg');
+	}
+	});
+</script>
+</html>

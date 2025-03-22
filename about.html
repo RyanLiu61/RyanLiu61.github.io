@@ -1,0 +1,73 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>About Me</title>
+	<link href="css/mycss.css" type="text/css" rel="stylesheet"/>
+<style>
+p {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 20px;
+}
+</style>
+</head>
+
+<body>
+	<header>
+	<img class="bannerimg" src="images/aboutimg.jpg" alt="mainlogo">
+	 <div class="container" id="navbar">
+	
+	  <div class="topmenu">
+		<div class="left">
+		 <img src="images/mainlogo.jpg" alt="logo">
+		</div>
+		<div class="middle">
+		 <ul class="menu-list">
+			<li><b><a href="about.html">About Me</a></b></li>
+			 <li><b><a href="schoollife.html">School Life</a></b></li>
+			 <li><b><a href="daylife.html">Hockey Life</a></b></li>
+			 <li><b><a href="createlife.html">Create Life</a></b></li>
+			 <li><b><a class="active" href="index.html">Contact Me</a></b></li>
+		 </ul>
+		</div>
+	  </div>
+	 </div>
+	</header>	
+	
+	
+	<h1>Zonglin Liu(Ryan)刘宗霖</h1>	
+ 	<h2> (He/Him)</h2>	
+
+	<div class="flex-container">
+	<div>
+	 <img src="images/headshoot.jpeg" alt="headshoot" class="headshoot" width="550" hight="400">
+	</div>
+	
+	<div>
+	<p class="fengge">Hi, I'm Zonglin Liu(Ryan Liu). I'm am currently an undergraduate student at <u><b><a href="https://www.wisc.edu/">University of Wisconsin-Madison</a></b></u>, expecting to graduate in 2027. My major is Communication Arts, with a focus on radio, television, and film.</p>
+	<p class="paragraph">你好，我是刘宗霖。我目前是一名本科生就读于威斯康辛大学麦迪逊分校，预计将于2027年毕业。我的主修是传播艺术，专注于广播、电视和电影。</p>
+	
+	<p class="fengge">
+	I was born in Beijing, China, and grew up there. I speak Mandarin, English, and a little bit of Cantonese. I came to the United States for my high school education and attended to <u><b><a href="https://www.stmarysprep.com/">Orchard Lake St. Mary's</a></b></u> in West Bloomfield, Michigan.</p>
+	<p>我出生在中国北京，并且从小在北京长大。我会说普通话、英语还有一点点粤语。我在高中的时候来到了美国上学，就读于果园湖圣玛丽中学。</p>
+	</div>
+	</div>
+	
+	
+	
+	
+	
+	
+</body>
+<script>
+	window.addEventListener('scroll', function () {
+		var navbar = document.getElementById('navbar');
+		if (window.scrollY > 50){
+			navbar.classList.add('activeBg');
+			navbar.classList.remove('transBg');
+	} else {
+			navbar.classList.add('transBg');
+			navbar.classList.remove('activeBg');
+	}
+	});
+</script>
+</html>

@@ -1,0 +1,175 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Create Life</title>
+	<link href="css/mycss.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+	<header>
+	<img class="bannerimg" src="images/creatimg.jpg" alt="mainlogo">
+	 <div class="container" id="navbar">
+	
+	  <div class="topmenu">
+		<div class="left">
+		 <img src="images/mainlogo.jpg" alt="logo">
+		</div>
+		<div class="middle">
+		 <ul class="menu-list">
+			  <li><b><a href="about.html">About Me</a></b></li>
+			 <li><b><a href="schoollife.html">School Life</a></b></li>
+			 <li><b><a href="daylife.html">Hockey Life</a></b></li>
+			 <li><b><a href="createlife.html">Create Life</a></b></li>
+			 <li><b><a class="active" href="index.html">Contact Me</a></b></li>
+		 </ul>
+		</div>
+	  </div>
+	 </div>
+	</header>	
+	
+	<div class="center-block">
+	<h1>My Creative Work</h1>
+	
+	<div class="carousel" id="carousel">
+		<div class="carousel-inner">
+			<div class="item active">
+				<a href="#" class="ai-banner-contain" target="_blank">
+					<img src="images/CW1.jpg" alt="" title=" ">
+					<div class="carousel-caption"></div>
+				</a>
+			</div>
+			<div class="item">
+				<a href="#" class="ai-banner-contain" target="_blank">
+					<img src="images/CW2.jpg" alt="" title=" ">
+					<div class="carousel-caption"></div>
+				</a>
+			</div>
+			<div class="item">
+				<a href="#" class="ai-banner-contain" target="_blank">
+					<img src="images/CW3.jpg" alt="" title=" ">
+					<div class="carousel-caption"></div>
+				</a>
+			</div>
+			<div class="item">
+				<a href="#" class="ai-banner-contain" target="_blank">
+					<img src="images/CW4.jpg" alt="" title=" ">
+					<div class="carousel-caption"></div>
+				</a>
+			</div>
+			<div class="item">
+				<a href="#" class="ai-banner-contain" target="_blank">
+					<img src="images/CW5.jpg" alt="" title=" ">
+					<div class="carousel-caption"></div>
+				</a>
+			</div>
+			<div class="item">
+				<a href="#" class="ai-banner-contain" target="_blank">
+					<img src="images/CW6.jpg" alt="" title=" ">
+					<div class="carousel-caption"></div>
+				</a>
+			</div>
+			<div class="item">
+				<a href="#" class="ai-banner-contain" target="_blank">
+					<img src="images/CW7.jpg" alt="" title=" ">
+					<div class="carousel-caption"></div>
+				</a>
+			</div>
+			<div class="item">
+				<a href="#" class="ai-banner-contain" target="_blank">
+					<img src="images/CW8.jpg" alt="" title=" ">
+					<div class="carousel-caption"></div>
+				</a>
+			</div>
+			<div class="item">
+				<a href="#" class="ai-banner-contain" target="_blank">
+					<img src="images/CW9.jpg" alt="" title=" ">
+					<div class="carousel-caption"></div>
+				</a>
+			</div>
+			<div class="item">
+				<a href="#" class="ai-banner-contain" target="_blank">
+					<img src="images/CW10.jpg" alt="" title=" ">
+					<div class="carousel-caption"></div>
+				</a>
+			</div>
+			<div class="item">
+				<a href="#" class="ai-banner-contain" target="_blank">
+					<img src="images/CW11.png" alt="" title=" ">
+					<div class="carousel-caption"></div>
+				</a>
+			</div>
+			<div class="item">
+				<a href="#" class="ai-banner-contain" target="_blank">
+					<img src="images/CW12.png" alt="" title=" ">
+					<div class="carousel-caption"></div>
+				</a>
+			</div>
+			<div class="item">
+				<a href="#" class="ai-banner-contain" target="_blank">
+					<img src="images/CW13.png" alt="" title=" ">
+					<div class="carousel-caption"></div>
+				</a>
+			</div>
+			<div class="item">
+				<a href="#" class="ai-banner-contain" target="_blank">
+					<img src="images/CW14.png" alt="" title=" ">
+					<div class="carousel-caption"></div>
+				</a>
+			</div>
+			<ol class="carousel-indicators">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ol>
+			<div class="carousel-control left">&lsaquo;</div>
+			<div class="carousel-control right">&rsaquo;</div>
+		</div>
+	</div>
+
+</body>
+	
+<script>
+let currentIndex = 0;
+  const items = document.querySelectorAll('.carousel-inner .item');
+  const indicators = document.querySelectorAll('.carousel-indicators li');
+
+  function showSlide(index) {
+    items.forEach((item, i) => {
+      item.classList.remove('active');
+      indicators[i].classList.remove('active');
+    });
+    items[index].classList.add('active');
+    indicators[index].classList.add('active');
+    currentIndex = index;
+  }
+
+  document.querySelector('.carousel-control.right').onclick = () => {
+    let nextIndex = (currentIndex + 1) % items.length;
+    showSlide(nextIndex);
+  };
+
+  document.querySelector('.carousel-control.left').onclick = () => {
+    let prevIndex = (currentIndex - 1 + items.length) % items.length;
+    showSlide(prevIndex);
+  };
+
+  indicators.forEach((ind, i) => {
+    ind.onclick = () => {
+      showSlide(i);
+    };
+  });
+
+  showSlide(0);
+</script>
+</html>
