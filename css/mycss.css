@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+
+body{background-color: #F4F1EB;margin: 0;color: #333;min-height: 2000px;text-align: center;}
+ul {list-style: none;padding: 0;}
+a {text-decoration: none;color: #333;}
+h1,p {margin: 0;}
+.blank-section {height: 100px;width: 100px;}
+.white {color: #FFF;}
+
+header {position: relative;}
+.bannerimg{width: 100%;display: block;}
+
+.container{width: 100%;height: 75px;position: fixed;top: 0;left: 0;z-index: 99;transition: background-color .5s ease;}
+
+.transBg {background-color: transparent;}
+
+.activeBg {background-color: #000;}
+
+.topmenu{width: 1366px;margin: 0 auto;display: grid;grid-template-columns: 200px;gap: 20px;place-content: center;height: 75;}
+
+.topmenu a {color: gray;}
+
+.active .topmenu {color: rgba(255,226,0,1.00);}
+
+.topmenu a:hover {color: rgba(255,226,0,1.00);font-weight: bolder;}
+
+.topmenu a:active {opacity: 0.7;font-weight: bold;}
+
+.topmenu .left img {width: 50px;height: 50px;border-radius: 5px;}
+
+.topmenu .middle .menu-list {display: grid;grid-template-columns: repeat(5, 120px);place-items: center;}
+
+.flex-container {display: flex;align-items: center;}
+
+.flex-container > div {margin: 80px;}
+
+.paragraph {margin-bottom: 80px;}
+
+.headshoot{position: relative;left: 100px;}
+
+.hockey{width: 100%;border-radius: 6px;transition: .3s linear;}
+
+.hua{background-color:darkgray;margin: 0 20px;padding: 30px;border-radius: 6px;transform: translateY(-69px);transition: .3s linear;font-size: 16px;color: snow;margin-bottom: 10px;font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";}
+
+.fengge{margin-bottom: 30px;}
+
+.dfzp{width: min(1200px, 100%);padding: 20px;display: flex;justify-content: space-between;flex-wrap: wrap;cursor: pointer;}
+
+.zp{width: calc(33% - 10px);overflow: hidden;}
+
+.center-block {width: 70%;margin: 0 auto;}
+
+p{
+	width: 400px;
+	right: 100px;
+}
+
+aside {
+	width: 290px;
+	float: right;	
+	
+}
+
+
+nav li {
+	display: inline;
+	margin-left: 120px;
+	color: currentColor;
+	font-size: 25px;
+}
+
+.carousel{
+	position: relative;width: 500px;height: auto;margin: 0 auto;}
+
+.carousel-inner{position: relative;width: 100%;overflow: hidden;}
+
+.carousel-inner>.item{position: relative;display: none;transition: left 0.6s ease-in-out;}
+
+.carousel-inner>.active{display: block;left: 0;transition: translate3d(0,0,0);}
+
+.carousel-inner>.item>a>img{display: block;width: 100%;height: auto;line-height: 1;border: 0;}
+
+.carousel-caption{position: absolute;left: 15%;bottom: 40px;right: 15%;z-index: 10;padding: 20px 0;color: #fff;text-align: center;}
+
+.carousel-caption{text-shadow: 0 1px 2px rgba(0, 0, 0, .6);}
+
+.carousel-indicators{position: absolute; bottom: 10px; left: 50%; z-index: 15; width: 60%; padding-left: 0; margin-left: -30%; text-align: center; list-style: none;}
+
+.carousel-indicators>li{display: inline-block; width: 10px; height: 10px; margin: 1px; text-indent: -999px; cursor: pointer; background-color: rgba(0, 0, 0, 0); border: 1px solid #fff; border-radius: 10px;}
+
+.carousel-indicators .active{width: 12px; height: 12px; margin: 0; background-color: #fff;}
+
+.carousel-control{position: absolute; top: 50%; transform: translateY(-50%); color: #fff; font-size: 72px; line-height: 72px; text-align: center; text-shadow: 0 1px 2px rgba(0, 0, 0, .6); width: 72px; z-index: 10; cursor: pointer;}
+
+.carousel-control{color: #fff; font-size: 72px; line-height: 72px; text-height: center; text-shadow: 0 1px 2px rgba(0, 0, 0, .6); width: 72px; z-index: 10; cursor: pointer;}
+
+.carousel-control.left{left: 0;}
+
+.carousel-control.right{right: 0;}
+
+/* CSS Document */
+
